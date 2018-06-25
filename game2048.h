@@ -1,3 +1,6 @@
+#ifndef _GAME2048_H_
+#define _GAME2048_H_
+
 #include <ctime>
 #include <cstdio>
 #include <cstdlib>
@@ -45,6 +48,7 @@ private:
 
     char getKeyboardChar(void);
 };
+
 int Game2048::pow[Game2048::MaxPowSize]={0, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024,
                     2048, 4096, 8192, 16384, 32768, 65536};
 char Game2048::SplitChar='|';
@@ -279,3 +283,6 @@ char Game2048::getKeyboardChar(){
     tcsetattr(0,TCSANOW,&stored_settings);
     return in;
 }
+
+
+#endif // _GAME2048_H_

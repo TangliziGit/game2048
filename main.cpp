@@ -1,8 +1,7 @@
 #include "game2048.h"
-#include <cstdio>
 
 int main(void){
-    Game2048 game(8);
+    Game2048 game(5);
 
     game.run();
 
