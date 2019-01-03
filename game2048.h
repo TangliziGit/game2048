@@ -209,6 +209,7 @@ int Game2048::getDirect(void){
 
 
 void Game2048::display(int type){
+    system("clear");
     if (type==DisNormal){
         printf("\n");
         for (int y=0; y<boardSize; y++){
